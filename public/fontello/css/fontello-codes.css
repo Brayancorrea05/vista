@@ -1,0 +1,9 @@
+
+.icon-basura:before { content: '\e800'; } /* '' */
+.icon-lapiz:before { content: '\e801'; } /* '' */
+.icon-config:before { content: '\e802'; } /* '' */
+.icon-ticket:before { content: '\e803'; } /* '' */
+.icon-users:before { content: '\e804'; } /* '' */
+.icon-flecha-arriba:before { content: '\f106'; } /* '' */
+.icon-flecha-abajo:before { content: '\f107'; } /* '' */
+.icon-user:before { content: '\f2be'; } /* '' */
