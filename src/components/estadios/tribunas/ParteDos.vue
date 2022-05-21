@@ -1,8 +1,9 @@
 <template>
-  <div class="contendor-tribuna"><encabezadoTribuna /> 
-  
-  
-  <cardTribuna /></div>
+  <div class="contendor-tribuna">
+    <encabezadoTribuna />
+
+    <cardTribuna />
+  </div>
 </template>
 
 

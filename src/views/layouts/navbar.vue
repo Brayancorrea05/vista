@@ -25,13 +25,31 @@
         </div>
       </div>
       <div class="div-menu">
-        <div class="tooltip-container">
-          <div class="tooltip-trigger">
-            <button class="icono-menu">
-              <img src="@/assets/menu.png" alt="" class="menu" />
-            </button>
+        <div class="dropdown">
+          <button
+            style="background: none; border: none"
+            type="button"
+            id="dropdownMenuButton"
+            data-toggle="dropdown"
+            aria-haspopup="true"
+            aria-expanded="false"
+          >
+            <div class="tooltip-container">
+              <div class="tooltip-trigger">
+                <button class="icono-menu">
+                  <img src="@/assets/menu.png" alt="" class="menu" />
+                </button>
+              </div>
+              <div class="tooltip-one" style="bottom: 7px; right: 48px">
+                Menu
+              </div>
+            </div>
+          </button>
+          <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+            <a class="dropdown-item" href="#"><i class="icon-user"></i> Home</a>
+            <a class="dropdown-item" href="#"><i class="icon-user"></i> Administradores</a>
+            <a class="dropdown-item" href="#"><i class="icon-config"></i> Configuración</a>
           </div>
-          <div class="tooltip-one">Menu</div>
         </div>
       </div>
       <div class="div-usuario">
@@ -52,7 +70,6 @@
           </div>
         </div>
 
-        <div></div>
         <div>
           <img src="@/assets/logoCoex.png" alt="" class="img-logo" />
         </div>
@@ -72,9 +89,17 @@
   justify-content: space-between;
   align-content: center;
 }
-.dropdown-menu.show{
- top: 20px !important;
- left: -50px !important;
+.dropdown-menu.show {
+  top: 20px !important;
+  transition: transform 1s;
+  left: -50px !important;
+  box-shadow: 0px 3px 3px #00000029;
+}
+.dropdown-item{
+  display: flex !important;
+  justify-items: center;
+    align-content: center;
+    align-items: center;
 }
 .contendor-dos {
   display: flex;
@@ -89,17 +114,16 @@
 .menu {
   width: 20px;
 }
-.icono-menu{
-width: 45px;
+.icono-menu {
+  width: 45px;
   height: 45px;
   background: none;
   border: none;
   margin: 8px;
   transition: transform 1s;
 }
-.icono-menu:focus{
-   transform: rotate(272deg);
-  
+.icono-menu:active {
+  transform: rotate(360deg);
 }
 .div-iconos {
   display: flex;
@@ -141,9 +165,11 @@ width: 45px;
 }
 .icon-user {
   font-size: 30px;
+  margin-right: 5px;
 }
 .icon-config {
   font-size: 30px;
+  margin-right: 5px;
 }
 .icon-flecha-abajo {
   font-size: 20px;
